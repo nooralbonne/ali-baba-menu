@@ -1,0 +1,156 @@
+.footer {
+  position: relative;
+  margin-top: 2rem;
+  overflow: hidden;
+  background-color: var(--foreground);
+  color: var(--primary-foreground);
+}
+
+.wave {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+}
+
+.wave svg {
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 3.5rem 1rem 2rem;
+}
+
+.logoSection {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  ring: 2px solid rgba(245, 197, 24, 0.5);
+}
+
+.brand {
+  margin-top: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: var(--primary-foreground);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: var(--radius-lg);
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  text-align: center;
+}
+
+.iconWrapper {
+  display: flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: var(--primary);
+}
+
+.iconWrapperYellow {
+  background-color: var(--secondary);
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--primary-foreground);
+}
+
+.iconWrapperYellow .icon {
+  color: var(--secondary-foreground);
+}
+
+.cardTitle {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--secondary);
+}
+
+.cardText {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.phoneGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.phoneLink {
+  border-radius: var(--radius-md);
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.phoneLink:hover {
+  background-color: var(--secondary);
+  color: var(--secondary-foreground);
+}
+
+.deliveryText {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.deliveryTime {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.timeIcon {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.copyright {
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.4);
+}

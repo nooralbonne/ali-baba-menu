@@ -1,0 +1,77 @@
+.section {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 2rem 1px;
+}
+
+.header {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.headerBar {
+  width: 0.375rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  background-color: var(--secondary);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--foreground);
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+}
+
+/* تأكد من وجود هذه الأقسام للـ grid */
+.grid {
+  display: grid !important; /* استخدم !important للتأكد من التطبيق */
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  direction: rtl;
+  margin-top: 1rem;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+  color: var(--muted-foreground);
+}
+
+.emptyIcon {
+  margin-bottom: 1rem;
+  width: 4rem;
+  height: 4rem;
+  opacity: 0.3;
+}
+
+.emptyTitle {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.emptyText {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+}

@@ -1,0 +1,172 @@
+.header {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--foreground);
+}
+
+.pattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.05;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 35px,
+    rgba(255, 255, 255, 0.03) 35px,
+    rgba(255, 255, 255, 0.03) 70px
+  );
+}
+
+.container {
+  position: relative;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 4.5rem;
+}
+
+.topBar {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (min-width: 768px) {
+  .topBar {
+    font-size: 0.875rem;
+  }
+}
+
+.contactLink {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contactLink:hover {
+  color: var(--secondary);
+}
+
+.separator {
+  display: none;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+@media (min-width: 768px) {
+  .separator {
+    display: inline;
+  }
+}
+
+.delivery {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--secondary);
+}
+
+.deliveryText {
+  font-weight: 700;
+}
+
+.logoSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logoWrapper {
+  position: relative;
+}
+
+.logoGlow {
+  position: absolute;
+  inset: -0.5rem;
+  border-radius: 50%;
+  background-color: rgba(245, 197, 24, 0.2);
+  filter: blur(12px);
+}
+
+.logo {
+  position: relative;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  ring: 4px solid rgba(245, 197, 24, 0.5);
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width: 11rem;
+    height: 11rem;
+  }
+}
+
+.titleSection {
+  text-align: center;
+}
+
+.titleMain {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--primary-foreground);
+}
+
+@media (min-width: 768px) {
+  .titleMain {
+    font-size: 1.875rem;
+  }
+}
+
+.titleSub {
+  font-size: 1.875rem;
+  font-weight: 900;
+  color: var(--secondary);
+}
+
+@media (min-width: 768px) {
+  .titleSub {
+    font-size: 2.25rem;
+  }
+}
+
+.address {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.icon {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.iconSmall {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.wave svg {
+  width: 100%;
+}

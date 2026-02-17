@@ -1,0 +1,58 @@
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  border-bottom: 1px solid var(--border);
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.scrollArea {
+  display: flex;
+  gap: 0.25rem;
+  overflow-x: auto;
+  padding: 0.75rem 1rem;
+    direction: rtl; /* أضف هذا السطر */
+
+}
+
+.tab {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: var(--radius-lg);
+  padding: 0.625rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tabActive {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  box-shadow: 0 4px 6px -1px rgba(196, 30, 36, 0.25);
+}
+
+.tabInactive {
+  background-color: var(--muted);
+  color: var(--muted-foreground);
+}
+
+.tabInactive:hover {
+  background-color: rgba(196, 30, 36, 0.1);
+  color: var(--primary);
+}
+
+.icon {
+  width: 1rem;
+  height: 1rem;
+}
